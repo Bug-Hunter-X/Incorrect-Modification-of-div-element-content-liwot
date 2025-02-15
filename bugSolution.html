@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Uncommon HTML Bug Solution</title>
+</head>
+<body>
+  <div id="myDiv">
+    <p>This is some text.</p>
+  </div>
+
+  <script>
+    // Correct way to modify div's inner HTML using innerHTML
+    document.getElementById("myDiv").innerHTML = "<p>This is new text.</p>"; 
+    // Alternatively, manipulating the element itself if only text content needs update:
+    // const paragraph = document.getElementById("myDiv").querySelector("p");
+    // paragraph.textContent = "This is the updated text.";
+  </script>
+</body>
+</html>
