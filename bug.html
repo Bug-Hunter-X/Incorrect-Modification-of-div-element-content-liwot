@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Uncommon HTML Bug</title>
+</head>
+<body>
+  <div id="myDiv">
+    <p>This is some text.</p>
+  </div>
+
+  <script>
+    // Incorrect way to access and modify the content of a div 
+    document.getElementById("myDiv").textContent = "<p>This is new text.</p>";
+  </script>
+</body>
+</html>
